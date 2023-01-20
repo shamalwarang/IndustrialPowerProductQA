@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+
+
+	<test name="Validate Login Page Test">
+		<classes>
+
+			<class name="com.qa.ipp.tests.LoginPageTest" />
+
+
+		</classes>
+
+	</test>
+	
+
+
+	<test name="Validate Home Page Test">
+		<classes>
+
+			<class name="com.qa.ipp.tests.HomePageTest" />
+
+
+		</classes>
+
+	</test>
+	
+
+
+	<test name="Validate Add Customer Page Test">
+		<classes>
+
+			<class name="com.qa.ipp.tests.AddCustomerPageTest" />
+
+
+		</classes>
+
+	</test>
+	
+
+
+
+
+	<test name="Validate Create Work Order Page Test">
+		<classes>
+
+			<class name="com.qa.ipp.tests.CreateWorkOrderTest" />
+
+
+		</classes>
+
+	</test>
+	
+
+
+
+
+</suite> <!-- Regression Suite -->
