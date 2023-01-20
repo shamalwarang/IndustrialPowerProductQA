@@ -64,8 +64,6 @@ public class CreateWorkOrderPage {
 			
 			eleUtil.doPresenceOfElementLocated(this.CustomerName, Constants.DEFAULT_TIME_OUT);
 
-			
-			//eleUtil.doClick(this.CustomerName);
 			eleUtil.doSendKeys(this.CustomerName, CustomerName);
 			
 			By CustomerNameFirstElement = By.xpath("//*[@id=\"custName_listbox\"]/li[1]");
