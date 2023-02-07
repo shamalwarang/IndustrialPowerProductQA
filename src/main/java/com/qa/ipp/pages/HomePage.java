@@ -48,7 +48,10 @@ public class HomePage {
 		}
 		
 		public boolean HomePageLoggedinuser() {
+			eleUtil.doPresenceOfElementLocated(LoggedinUser, Constants.DEFAULT_TIME_OUT);
 			return eleUtil.doIsDisplayed(LoggedinUser);
+			
+			
 		}
 		
 		public boolean HomePageLogout() {

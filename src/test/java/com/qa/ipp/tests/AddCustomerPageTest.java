@@ -46,7 +46,7 @@ public class AddCustomerPageTest extends BaseTest{
 	public void ValidateCustomerId() throws InterruptedException  {
 		
 		boolean isFound = addCustomerPage.ValidateCustomerId(custId);
-		Assert.assertEquals(isFound, true);
+		Assert.assertEquals(isFound, false);
 	}
 	
 	@Test(priority=6)

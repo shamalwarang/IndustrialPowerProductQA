@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.log4testng.Logger;
 
 import com.qa.ipp.factory.DriverFactory;
 import com.qa.ipp.pages.AddCustomerPage;

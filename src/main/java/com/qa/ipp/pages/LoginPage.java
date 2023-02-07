@@ -2,6 +2,7 @@ package com.qa.ipp.pages;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -10,6 +11,8 @@ import com.qa.ipp.utils.ElementUtil;
 
 public class LoginPage {
 
+	//public static Logger log = Logger.getLogger(LoginPage.class.getName());
+	
 	//1. Declare private webdriver
 	private WebDriver driver;
 	private ElementUtil eleUtil;

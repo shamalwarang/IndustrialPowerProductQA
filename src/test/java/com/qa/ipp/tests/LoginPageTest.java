@@ -1,14 +1,23 @@
 package com.qa.ipp.tests;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+//import org.testng.log4testng.Logger;
 
 import com.qa.ipp.utils.Constants;
 
+
 public class LoginPageTest extends BaseTest{
+	
+	Logger log = Logger.getLogger(LoginPageTest.class.getName());
+	
+	//PropertyConfigurator.configure("C:\\Users\\shamal.w\\eclipse-workspace-new\\IndustrialPowerProduct\\src\\main\\resources\\log4j.properties");
 
 	@Test(priority=2)
 	public void LoginPageTitle() {
+		log.info("Printing Title");
 		String actTitle = loginPage.getLoginPageTitle();
 		System.out.println("Page Title is :" +actTitle);
 		Assert.assertEquals(actTitle, Constants.LOGIN_PAGE_TITLE);
@@ -16,11 +25,14 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority=1)
 	public void LoginPageUrl() {
+		log.info("Launching URL");
 		Assert.assertTrue(loginPage.getLoginPageUrl());
 	}
 	
 	@Test(priority=3)
 	public void cantAccessAccountLink() {
+		log.warn("Check create account access link");
+		log.fatal("Hey just a warning");
 		Assert.assertTrue(loginPage.CantAccessAccountLink());
 		
 	}
@@ -32,6 +44,7 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority=4)
 	public void Login() throws InterruptedException {
+		log.info("Page Chaining");
 		
 	 homePage = loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	 Assert.assertEquals(homePage.getHomePageTitle(), Constants.HOME_PAGE_TITLE);
