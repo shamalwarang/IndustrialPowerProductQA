@@ -16,13 +16,13 @@ import com.qa.ipp.pages.LoginPage;
 
 public class BaseTest {
 	
-	DriverFactory df;
-	WebDriver driver;
-	LoginPage loginPage;
-	Properties prop;
-	HomePage homePage;
-	AddCustomerPage addCustomerPage;
-	CreateWorkOrderPage createWorkOrderPage;
+	public DriverFactory df;
+	public WebDriver driver;
+	public LoginPage loginPage;
+	public Properties prop;
+	public HomePage homePage;
+	public AddCustomerPage addCustomerPage;
+	public CreateWorkOrderPage createWorkOrderPage;
 	
 	@BeforeTest
 	public void setUp() throws InterruptedException {
