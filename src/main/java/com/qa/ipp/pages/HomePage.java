@@ -77,6 +77,7 @@ public class HomePage {
 				eleUtil.doClick(AddCustomer);
 				Thread.sleep(2000);
 			}
+			System.out.println("ClickAddCustomer HomePage");
 			return new AddCustomerPage(driver);
 		}
 		
