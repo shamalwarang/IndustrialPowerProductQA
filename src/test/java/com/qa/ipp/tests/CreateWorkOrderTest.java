@@ -18,6 +18,7 @@ public class CreateWorkOrderTest extends BaseTest{
 		custId = addCustomerPage.CreateCustomerServiceInformation("5","4","3","6" , "2","7");
 		addCustomerPage.CreateCustomerScheduledMaintenance();
 		addCustomerPage.ValidateCustomerId(custId);
+		System.out.println("AddCustomerPage ============================ 1");
 		createWorkOrderPage = addCustomerPage.WorkOrder();
 	}   
 	

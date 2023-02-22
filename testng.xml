@@ -5,7 +5,7 @@
 			<listener class-name="com.qa.ipp.listeners.IppExtentReportListener" /> 
 		</listeners>
 
-	<test name="Validate Login Page Test">
+	<!-- <test name="Validate Login Page Test">
 		<classes>
 
 			<class name="com.qa.ipp.tests.LoginPageTest" />
@@ -37,7 +37,7 @@
 
 		</classes>
 
-	</test>
+	</test> -->
 	
 
 

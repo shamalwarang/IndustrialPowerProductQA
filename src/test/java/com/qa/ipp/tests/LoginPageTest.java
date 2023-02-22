@@ -49,6 +49,7 @@ public class LoginPageTest extends BaseTest{
 		log.info("Page Chaining");
 		
 	 homePage = loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
+	 System.out.println("Login LoginPageTest");
 	 Assert.assertEquals(homePage.getHomePageTitle(), Constants.HOME_PAGE_TITLE);
 	}
 	
