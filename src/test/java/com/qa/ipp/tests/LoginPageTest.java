@@ -11,6 +11,8 @@ import com.qa.ipp.utils.Constants;
 
 public class LoginPageTest extends BaseTest{
 	
+	//Adding for testing 
+	
 	Logger log = Logger.getLogger(LoginPageTest.class.getName());
 	
 	//PropertyConfigurator.configure("C:\\Users\\shamal.w\\eclipse-workspace-new\\IndustrialPowerProduct\\src\\main\\resources\\log4j.properties");

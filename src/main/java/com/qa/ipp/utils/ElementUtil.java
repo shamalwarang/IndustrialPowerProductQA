@@ -69,9 +69,10 @@ public class ElementUtil {
 		return eleTextList;
 	}
 
-	public void printElementsText(By locator) {
-		getElementsTextList(locator).stream().forEach(e -> System.out.println(e));
-	}
+	/*
+	 * public void printElementsText(By locator) {
+	 * getElementsTextList(locator).stream().forEach(e -> System.out.println(e)); }
+	 */
 
 	public void getAttributeList(By locator, String attr) {
 		List<WebElement> attrList = getElements(locator);
@@ -121,9 +122,10 @@ public class ElementUtil {
 		select.selectByValue(value);
 	}
 
-	public void printDropDownOptions(By locator) {
-		getDropDownOptions(locator).stream().forEach(e -> System.out.println(e));
-	}
+	/*
+	 * public void printDropDownOptions(By locator) {
+	 * getDropDownOptions(locator).stream().forEach(e -> System.out.println(e)); }
+	 */
 
 	public List<String> getDropDownOptions(By locator) {
 		Select select = new Select(getElement(locator));
@@ -203,10 +205,11 @@ public class ElementUtil {
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
 
-	public void printElementsText(By locator, int timeOut) {
-		waitForVisibilityOfElements(locator, timeOut).stream().forEach(e -> System.out.println(e.getText()));
-	}
-
+	/*
+	 * public void printElementsText(By locator, int timeOut) {
+	 * waitForVisibilityOfElements(locator, timeOut).stream().forEach(e ->
+	 * System.out.println(e.getText())); }
+	 */
 	/**
 	 * An expectation for checking that an element is present on the DOM of a page.
 	 * This does not necessarily mean that the element is visible.
