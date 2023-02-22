@@ -25,7 +25,9 @@ public class BaseTest {
 	public CreateWorkOrderPage createWorkOrderPage;
 	
 	@BeforeTest
+	
 	public void setUp() throws InterruptedException {
+		System.out.println("Before Test test");
 		df = new DriverFactory();
 		prop = df.init_prop();
 		driver = df.init_driver(prop);
