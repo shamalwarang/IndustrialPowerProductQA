@@ -45,6 +45,7 @@ public class DriverFactory {
 		if (browserName.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			//driver = new ChromeDriver();
 			tlDriver.set(new ChromeDriver());
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
