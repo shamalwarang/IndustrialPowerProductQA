@@ -10,7 +10,7 @@ public class CreateWorkOrderTest extends BaseTest{
 	String custId;
 	@BeforeClass
 	public void CreateWorkOrdePageSetup() throws InterruptedException{
-		System.out.println("Before class");
+		System.out.println("Before class ============ -1");
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		System.out.println("AddCustomerPage ============================ 0");
 		homePage.ClickCustomer();
