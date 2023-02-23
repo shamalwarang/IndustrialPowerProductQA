@@ -12,7 +12,7 @@ public class AddCustomerPageTest extends BaseTest{
 
 	@BeforeClass
 	public void AccountPageSetup() throws InterruptedException{
-		System.out.println("Before class");
+		System.out.println("Before class ======================= AddCustomerPageTest");
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.ClickCustomer();
 		addCustomerPage = homePage.ClickAddCustomer();
