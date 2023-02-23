@@ -74,14 +74,14 @@ public class AddCustomerPage {
 
 	public void createCustomer(String CustomerName, String Address1, String City, String State, String ZipCode, String ServiceContactEmail, String ServiceContactName, String ServiceContactNumber)
 			throws InterruptedException {
-
+		System.out.println("createCustomer=======================1");
 		eleUtil.doSendKeys(this.CustomerName, CustomerName);
 		
 		By SalesPersonFirstElement = By.xpath("//*[@id=\"SalesPersonId_listbox\"]/li[1]");
 		By SalesPersonDropDown = By.xpath("//*[@id=\"SalesPersonId_listbox\"]/li");
 		
 		eleUtil.selectValueFromCustomSelect(SalesPerson1, SalesPersonDropDown, SalesPersonFirstElement, "Test user");
-		
+		System.out.println("createCustomer=======================2");
 		By CustomerFirstElement = By.xpath("//*[@id=\"TypeId_listbox\"]/li[1]");
 		By CustomerTypeDropDown = By.xpath("//*[@id=\"TypeId_listbox\"]/li");
 		
@@ -107,7 +107,7 @@ public class AddCustomerPage {
 		
 		eleUtil.doPresenceOfElementLocated(this.Address1, Constants.DEFAULT_TIME_OUT);
 		eleUtil.doSendKeys(this.Address1, Address1);
-
+System.out.println("createCustomer=======================3");
 		eleUtil.doPresenceOfElementLocated(this.City, Constants.DEFAULT_TIME_OUT);
 		eleUtil.doSendKeys(this.City, City);
 
@@ -133,7 +133,7 @@ public class AddCustomerPage {
 		
 		eleUtil.doPresenceOfElementLocated(this.ServiceContactNumber, Constants.DEFAULT_TIME_OUT);
 		js.executeScript("document.getElementById('ServiceContactNumber').value = " + ServiceContactNumber);
-
+System.out.println("createCustomer=======================4");
 		
 		By RoleFirstElement = By.xpath("//*[@id=\"ServiceRoleId_listbox\"]/li[1]");
 		By RoleDropDown = By.xpath("//*[@id=\"ServiceRoleId_listbox\"]/li");
@@ -144,6 +144,7 @@ public class AddCustomerPage {
 		
 		eleUtil.doPresenceOfElementLocated(ServiceContactSaveBtn, Constants.DEFAULT_TIME_OUT);
 		eleUtil.doClick(ServiceContactSaveBtn);
+		System.out.println("createCustomer=======================5");
 	}
 	
 	public String CreateCustomerServiceInformation(String LaborRate , String ServiceCall , String WateringRatePerBattery , String EstimatedTechDaysWatering , String BatteryPMRatePerBattery , String EstimatedTechDaysBatteryPM) {
