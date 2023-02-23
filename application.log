@@ -1,5 +1,0 @@
-2023-02-07 15:42:34,920  INFO [main] LoginPageTest:28 - Launching URL
-2023-02-07 15:42:34,948  INFO [main] LoginPageTest:20 - Printing Title
-2023-02-07 15:42:34,969  WARN [main] LoginPageTest:34 - Check create account access link
-2023-02-07 15:42:34,970 FATAL [main] LoginPageTest:35 - Hey just a warning
-2023-02-07 15:42:35,037  INFO [main] LoginPageTest:47 - Page Chaining

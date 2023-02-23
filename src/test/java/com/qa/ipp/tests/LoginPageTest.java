@@ -47,7 +47,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority=4)
 	public void Login() throws InterruptedException {
 		log.info("Page Chaining");
-		System.out.println("Login LoginPageTest=================1");
+		System.out.println("Login LoginPageTest");
 	 homePage = loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	 System.out.println("Login LoginPageTest");
 	 Assert.assertEquals(homePage.getHomePageTitle(), Constants.HOME_PAGE_TITLE);
