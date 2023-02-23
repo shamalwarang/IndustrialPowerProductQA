@@ -12,6 +12,7 @@ public class CreateWorkOrderTest extends BaseTest{
 	public void CreateWorkOrdePageSetup() throws InterruptedException{
 		System.out.println("Before class");
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		System.out.println("AddCustomerPage ============================ 0");
 		homePage.ClickCustomer();
 		addCustomerPage = homePage.ClickAddCustomer();
 		addCustomerPage.createCustomer("Shamal Warang1","India", "Pune", "MH", "55555","shamal@gmail.com","Shamal Service Contact","8888888888");
