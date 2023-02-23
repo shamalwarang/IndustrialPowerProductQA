@@ -10,7 +10,7 @@ public class HomePageTest extends BaseTest{
 
 	@BeforeClass
 	public void HomePageSetup(){
-		System.out.println("Before class");
+		System.out.println("Before class ======================= HomePageTest");
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
