@@ -14,12 +14,17 @@ public class CreateWorkOrderTest extends BaseTest{
 		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		System.out.println("AddCustomerPage ============================ 0");
 		homePage.ClickCustomer();
-		addCustomerPage = homePage.ClickAddCustomer();
-		addCustomerPage.createCustomer("Shamal Warang1","India", "Pune", "MH", "55555","shamal@gmail.com","Shamal Service Contact","8888888888");
-		custId = addCustomerPage.CreateCustomerServiceInformation("5","4","3","6" , "2","7");
-		addCustomerPage.CreateCustomerScheduledMaintenance();
-		addCustomerPage.ValidateCustomerId(custId);
 		System.out.println("AddCustomerPage ============================ 1");
+		addCustomerPage = homePage.ClickAddCustomer();
+		System.out.println("AddCustomerPage ============================ 2");
+		addCustomerPage.createCustomer("Shamal Warang1","India", "Pune", "MH", "55555","shamal@gmail.com","Shamal Service Contact","8888888888");
+		System.out.println("AddCustomerPage ============================ 3");
+		custId = addCustomerPage.CreateCustomerServiceInformation("5","4","3","6" , "2","7");
+		System.out.println("AddCustomerPage ============================ 4");
+		addCustomerPage.CreateCustomerScheduledMaintenance();
+		System.out.println("AddCustomerPage ============================ 5");
+		addCustomerPage.ValidateCustomerId(custId);
+		System.out.println("AddCustomerPage ============================ 6");
 		createWorkOrderPage = addCustomerPage.WorkOrder();
 	}   
 	
