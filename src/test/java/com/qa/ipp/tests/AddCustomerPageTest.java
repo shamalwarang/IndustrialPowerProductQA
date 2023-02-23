@@ -27,7 +27,9 @@ public class AddCustomerPageTest extends BaseTest{
 	
 	@Test(priority=2)
 	public void CreateCustomerTest() throws InterruptedException {
+		System.out.println("CreateCustomerTest=======================1");
 		addCustomerPage.createCustomer("Shamal","India", "Pune", "MH", "55555","shamal@gmail.com","Shamal Service Contact","8888888888");
+		System.out.println("CreateCustomerTest=======================2");
 		
 	}
 	
