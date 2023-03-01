@@ -57,3 +57,5 @@ public class AddCustomerPageTest extends BaseTest{
 		addCustomerPage.WorkOrder();
 	}
 }
+
+// Test 2
