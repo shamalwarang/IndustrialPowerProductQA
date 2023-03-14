@@ -1,0 +1,5 @@
+2023-03-13 16:58:22,176  INFO [main] LoginPageTest:30 - Launching URL
+2023-03-13 16:58:22,216  INFO [main] LoginPageTest:22 - Printing Title
+2023-03-13 16:58:22,251  WARN [main] LoginPageTest:36 - Check create account access link
+2023-03-13 16:58:22,256 FATAL [main] LoginPageTest:37 - Hey just a warning
+2023-03-13 16:58:22,353  INFO [main] LoginPageTest:49 - Page Chaining
